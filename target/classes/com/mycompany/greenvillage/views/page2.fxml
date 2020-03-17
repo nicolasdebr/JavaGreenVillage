@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="633.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.greenvillage.controllers.Page2Controller">
+    <stylesheets>
+        <URL value="@/styles/page2.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="209.0" layoutY="14.0" prefHeight="32.0" prefWidth="183.0" text="Ajout Client :">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="Email_input" layoutX="74.0" layoutY="111.0" onKeyReleased="#Email_released" />
+      <JFXTextField fx:id="Firstname_input" layoutX="74.0" layoutY="167.0" onKeyReleased="#Firstname_released" />
+      <JFXTextField fx:id="Lastname_input" layoutX="437.0" layoutY="111.0" onKeyReleased="#Lastname_released" />
+      <JFXTextField fx:id="Adress_input" layoutX="437.0" layoutY="167.0" onKeyReleased="#Adress_released" />
+      <JFXTextField fx:id="City_input" layoutX="74.0" layoutY="236.0" onKeyReleased="#City_released" />
+      <JFXTextField fx:id="Cp_input" layoutX="437.0" layoutY="236.0" onKeyReleased="#Cp_released" />
+      <JFXTextField editable="false" layoutX="437.0" layoutY="302.0" text="4" />
+      <JFXTextField fx:id="Country_input" layoutX="74.0" layoutY="302.0" onKeyReleased="#Country_released" />
+      <Label layoutX="23.0" layoutY="115.0" text="Email" />
+      <Label layoutX="12.0" layoutY="171.0" text="Firstname" />
+      <Label layoutX="356.0" layoutY="115.0" text="Lastname" />
+      <Label layoutX="364.0" layoutY="171.0" text="Adress" />
+      <Label layoutX="24.0" layoutY="240.0" text="City" />
+      <Label layoutX="375.0" layoutY="240.0" text="Cp" />
+      <Label layoutX="13.0" layoutY="306.0" text="Country" />
+      <Label layoutX="371.0" layoutY="306.0" text="Role" />
+      <JFXButton fx:id="Add_button" buttonType="RAISED" layoutX="142.0" layoutY="360.0" onAction="#Add_button_click" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: black;" text="Ajouter" textFill="#f2f0f0" />
+      <JFXButton fx:id="Cancel_button_add" buttonType="RAISED" layoutX="334.0" layoutY="360.0" onAction="#Cancel_button_add_click" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: black;" text="Annuler" textFill="#f2f0f0" />
+      <Label fx:id="label_verif_email" layoutX="209.0" layoutY="115.0" prefHeight="25.0" prefWidth="51.0" />
+      <Label fx:id="label_verif_firstname" layoutX="209.0" layoutY="167.0" prefHeight="25.0" prefWidth="51.0" />
+      <Label fx:id="label_verif_city" layoutX="209.0" layoutY="236.0" prefHeight="25.0" prefWidth="51.0" />
+      <Label fx:id="label_verif_country" layoutX="209.0" layoutY="302.0" prefHeight="25.0" prefWidth="51.0" />
+      <Label fx:id="label_verif_lastname" layoutX="572.0" layoutY="111.0" prefHeight="25.0" prefWidth="51.0" />
+      <Label fx:id="label_verif_adress" layoutX="572.0" layoutY="167.0" prefHeight="25.0" prefWidth="51.0" />
+      <Label fx:id="label_verif_cp" layoutX="572.0" layoutY="236.0" prefHeight="25.0" prefWidth="51.0" />
+   </children>
+</AnchorPane>

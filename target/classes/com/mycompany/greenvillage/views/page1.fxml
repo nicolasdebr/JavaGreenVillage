@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="1095.0" style="-fx-background-color: grey;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.greenvillage.controllers.Page1Controller">
+    <stylesheets>
+        <URL value="@/styles/page1.css" />
+    </stylesheets>
+   <children>
+      <JFXButton fx:id="Add_Button" buttonType="RAISED" layoutX="884.0" layoutY="84.0" onAction="#Click_Add_Button" prefHeight="76.0" prefWidth="188.0" style="-fx-background-color: black;" text="Add New Client" textFill="#f5f5f5" />
+      <JFXButton fx:id="Modify_Button" buttonType="RAISED" layoutX="884.0" layoutY="191.0" onAction="#Click_Modify_Button" prefHeight="76.0" prefWidth="188.0" style="-fx-background-color: black;" text="Modify Client" textFill="#f8f4f4" />
+      <JFXButton fx:id="Detail_Button" buttonType="RAISED" layoutX="884.0" layoutY="313.0" onAction="#Click_Detail_Button" prefHeight="76.0" prefWidth="188.0" style="-fx-background-color: black;" text="Detail client" textFill="#fcf9f9" />
+      <JFXButton fx:id="Delete_Button" buttonType="RAISED" layoutX="884.0" layoutY="432.0" onAction="#Click_Delete_Button" prefHeight="76.0" prefWidth="188.0" style="-fx-background-color: black;" text="Delete" textFill="#fcfafa" />
+      <TableView fx:id="Lst_clients" layoutX="35.0" layoutY="84.0" prefHeight="422.0" prefWidth="833.0">
+        <columns>
+          <TableColumn fx:id="col_Email" prefWidth="108.0" text="Email" />
+          <TableColumn fx:id="col_Lastname" prefWidth="102.0" text="Lastname" />
+            <TableColumn fx:id="col_Firstname" prefWidth="96.0" text="Firstname" />
+            <TableColumn fx:id="col_Adress" prefWidth="131.0" text="Adress" />
+            <TableColumn fx:id="col_City" prefWidth="87.0" text="City" />
+            <TableColumn fx:id="col_Cp" prefWidth="114.0" text="Cp" />
+            <TableColumn fx:id="col_Country" prefWidth="112.0" text="Country" />
+            <TableColumn fx:id="col_role" prefWidth="82.0" text="Role" />
+        </columns>
+      </TableView>
+      <Label layoutX="228.0" layoutY="23.0" prefHeight="39.0" prefWidth="560.0" text="Gestion Clients GreenVillage">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="refresh_button" buttonType="RAISED" layoutX="47.0" layoutY="45.0" onAction="#refresh_button_click" style="-fx-background-color: black;" text="Refresh" textFill="#fcf9f9" />
+   </children>
+</AnchorPane>
